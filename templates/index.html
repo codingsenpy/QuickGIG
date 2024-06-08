@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block head %}<link rel="stylesheet" href="static/style.css">{% endblock %}
+{% block body %}
+
+<div class="container">
+    <button type="button" class="block" onclick="window.location.href='{{url_for('look')}}';">Look</button><button type="button" class="block" onclick="window.location.href='{{url_for('hire')}}';">Hire</button></div>
+{% endblock %}

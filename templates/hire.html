@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+<form action="/look" method="post" target="hidden_iframe">
+        <div><label>Job Type:</label>
+        <select name="job" id="job">
+    <option value="Cook">Cook</option>
+    <option value="Clean">Clean</option>
+    <option value="electrical">electrical</option>
+    <option value="plumbing">plumbing</option>
+  </select></div>
+  <div><input type="text" placeholder="pay" id="ipay" name="pay"></div>
+  <div><input type="text" placeholder="location" id="ilocation" name="location"></div>
+  <div><input type="text" placeholder="time" id="itime" name="time"></div>
+        <button type="submit" >Submit</button>
+    </form>
+<iframe name="hidden_iframe" style="display: none;"></iframe>
+{% endblock %}
